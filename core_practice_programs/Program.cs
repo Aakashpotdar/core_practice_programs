@@ -6,9 +6,9 @@ namespace core_practice_programs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter choice : 1.coin flip program 2.leap year program");
-            Console.WriteLine("3.power of '2' 4.Hermonic number 5.Prime factors of number 6.");
-            Console.WriteLine("7.8.9.10.");
+            Console.WriteLine("enter choice :      1.coin flip program  2.leap year program");
+            Console.WriteLine("3.power of '2'      4.Hermonic number    5.Prime factors of number 6.Quotient and remainder");
+            Console.WriteLine("7.swap two numbers  8.swap two numbers   9.                        10.");
 
             int choice = int.Parse(Console.ReadLine());
 
@@ -35,8 +35,12 @@ namespace core_practice_programs
                     obj5.findFactors();
                     break;
                 case 6:
+                    quotientRemainder obj6 = new quotientRemainder();
+                    obj6.calculation();
                     break;
                 case 7:
+                    swap2Numbers obj7 = new swap2Numbers();
+                    obj7.opration();
                     break;
                 case 8:
                     break;
