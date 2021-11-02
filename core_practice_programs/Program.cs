@@ -6,9 +6,9 @@ namespace core_practice_programs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter choice :      1.coin flip program  2.leap year program");
-            Console.WriteLine("3.power of '2'      4.Hermonic number    5.Prime factors of number 6.Quotient and remainder");
-            Console.WriteLine("7.swap two numbers  8.swap two numbers   9.                        10.");
+  lable1: Console.WriteLine("enter choice :      1.coin flip program          2.leap year program");
+            Console.WriteLine("3.power of '2'      4.Hermonic number            5.Prime factors of number 6.Quotient and remainder");
+            Console.WriteLine("7.swap two numbers  8.Check the even oddnumber   9.vowel or consonant      10.Find largest number");
 
             int choice = int.Parse(Console.ReadLine());
 
@@ -43,12 +43,35 @@ namespace core_practice_programs
                     obj7.opration();
                     break;
                 case 8:
+                    evenOdd obj8 = new evenOdd();
+                        obj8.check();
                     break;
                 case 9:
+                    vowelConsonant obj9 = new vowelConsonant();
+                    obj9.logicPart();
                     break;
                 case 10:
+                    largestNum obj10 = new largestNum();
+                    obj10.compair();
+                    break;
+                default:
+                    Console.WriteLine("wrong choice");
+
                     break;
             }
+        
+            Console.WriteLine("do you want to continue please select y/n");
+            char option = char.Parse(Console.ReadLine());
+
+            if (option == 'y')
+            {
+                goto lable1;
+            }
+            else
+            {
+                Console.WriteLine("Thank you for your time");
+            }
+
         }
     }
 }
