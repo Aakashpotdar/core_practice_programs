@@ -7,8 +7,8 @@ namespace core_practice_programs
         static void Main(string[] args)
         {
             Console.WriteLine("enter choice : 1.coin flip program 2.leap year program");
-            Console.WriteLine("3.power of '2' 4.Hermonic number 5.6");
-            Console.WriteLine("7.8.9.10");
+            Console.WriteLine("3.power of '2' 4.Hermonic number 5.Prime factors of number 6.");
+            Console.WriteLine("7.8.9.10.");
 
             int choice = int.Parse(Console.ReadLine());
 
@@ -31,6 +31,8 @@ namespace core_practice_programs
                     obj4.hermonic();
                     break;
                 case 5:
+                    primeFactors obj5 = new primeFactors();
+                    obj5.findFactors();
                     break;
                 case 6:
                     break;
